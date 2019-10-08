@@ -6,6 +6,8 @@ import {
   ScrollView,
   SafeAreaView,
   Image,
+  Text,
+  TouchableOpacity,
   StyleSheet
 } from "react-native";
 
@@ -13,7 +15,7 @@ import logo from "../assets/logo.png";
 
 import SpotList from "../components/SpotList";
 
-export default function List() {
+export default function List({ navigation }) {
   const [techs, setTechs] = useState([]);
 
   useEffect(() => {
@@ -34,11 +36,14 @@ export default function List() {
 
   useEffect(() => {
     AsyncStorage.getItem("techs").then(storageTechs => {
-      console.log(storageTechs);
       const techsArray = storageTechs.split(",").map(tech => tech.trim());
       setTechs(techsArray);
     });
   }, []);
+
+  async function handleSubmit() {
+    navigation.navigate("Search");
+  }
 
   return (
     <SafeAreaView style={styles.container}>
@@ -48,6 +53,9 @@ export default function List() {
           <SpotList key={tech} tech={tech} />
         ))}
       </ScrollView>
+      <TouchableOpacity onPress={handleSubmit} style={styles.searchButton}>
+        <Text style={styles.buttonText}>Nova Pesquisa</Text>
+      </TouchableOpacity>
     </SafeAreaView>
   );
 }
@@ -59,7 +67,23 @@ const styles = StyleSheet.create({
   logo: {
     height: 32,
     resizeMode: "contain",
-    alignSelf: "center",
+    alignSelf: "flex-start",
+    marginLeft: 15,
     marginTop: 60
+  },
+  searchButton: {
+    height: 40,
+    width: 120,
+    backgroundColor: "#f05a5b",
+    borderRadius: 2,
+    alignItems: "center",
+    justifyContent: "center",
+    position: "absolute",
+    top: 50,
+    right: 20
+  },
+  buttonText: {
+    color: "#fff",
+    fontWeight: "bold"
   }
 });
