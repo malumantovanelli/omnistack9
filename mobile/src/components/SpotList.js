@@ -81,11 +81,12 @@ const styles = StyleSheet.create({
   noSpots: {
     fontSize: 16,
     color: "#555",
-    textAlign: "center",
+    paddingLeft: 30,
     paddingTop: 15
   },
   bold: {
-    fontWeight: "bold"
+    fontWeight: "bold",
+    color: "#f05a5b"
   },
   list: {
     paddingHorizontal: 20
