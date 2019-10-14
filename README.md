@@ -9,11 +9,11 @@ This repository contains all content that was developed during the RocketSeat's 
 ![alt text](https://github.com/malumantovanelli/omnistack9/blob/master/screenshots/front_newbooking.png)
 
 ## Mobile
-![alt text](https://github.com/malumantovanelli/omnistack9/blob/master/screenshots/mobile_login.png)
-![alt text](https://github.com/malumantovanelli/omnistack9/blob/master/screenshots/mobile_list.png)
-![alt text](https://github.com/malumantovanelli/omnistack9/blob/master/screenshots/mobile_book.png)
-![alt text](https://github.com/malumantovanelli/omnistack9/blob/master/screenshots/mobile_alert.png)
-![alt text](https://github.com/malumantovanelli/omnistack9/blob/master/screenshots/mobile_search.png)
+<img src="https://github.com/malumantovanelli/omnistack9/blob/master/screenshots/mobile_login.png" width="250">
+<img src="https://github.com/malumantovanelli/omnistack9/blob/master/screenshots/mobile_list.png" width="250">
+<img src="https://github.com/malumantovanelli/omnistack9/blob/master/screenshots/mobile_book.png" width="250">
+<img src="https://github.com/malumantovanelli/omnistack9/blob/master/screenshots/mobile_alert.png" width="250">
+<img src="https://github.com/malumantovanelli/omnistack9/blob/master/screenshots/mobile_search.png" width="250">
 
 ## Back-end
 ![alt text](https://github.com/malumantovanelli/omnistack9/blob/master/screenshots/backend_routesjs.png)
